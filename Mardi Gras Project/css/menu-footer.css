@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, #a852a9, #ffcd00);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+#title {
+  font-family: "Henny Penny";
+  font-size: 25px;
+  margin-top: 10px;
+  color: #f2f2f2;
+  letter-spacing: 10px;
+  line-height: 1;
+  -webkit-text-stroke: 2px #ffcd00;
+}
+
+.navbar {
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  margin-right: 20px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin-top: 10px;
+  margin: auto;
+}
+
+#main-logo {
+  width: 60px;
+  height: 50px;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #70c02d;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+.first-footer {
+  background-color: #a852a9;
+  height: 70px;
+  line-height: 3;
+  color: white;
+  bottom: 0;
+}
+.footer-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  line-height: 3;
+  bottom: 0;
+}
+.nav-item {
+  margin: auto;
+}
+
+.copy {
+  text-align: center;
+  width: 100vw;
+  height: 50px;
+  background-color: #ffcd00;
+  bottom: 0;
+}
+
+@media (max-width: 1121px) {
+  #title {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 594px) {
+  .hamburger {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    z-index: 1000;
+    position: fixed;
+    left: -100%;
+    top: 65px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffcc00d5;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .first-footer {
+    display: none;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+  #title {
+    display: none;
+  }
+}

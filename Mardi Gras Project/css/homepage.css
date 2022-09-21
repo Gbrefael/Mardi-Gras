@@ -1,0 +1,150 @@
+.slidepic {
+  width: 100vw;
+  height: 80vh;
+  background-position: center;
+}
+
+h2 {
+  font-family: "Henny Penny";
+  margin-top: 10px;
+}
+.carousel-item {
+  text-align: center;
+}
+.inner-div {
+  padding-top: 15px;
+  width: 400px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.733);
+  border: 2px solid #ffcd00;
+  position: relative;
+  margin-top: -350px;
+  float: right;
+  font-family: "Roboto";
+  margin-right: 75px;
+}
+section {
+  width: 100%;
+}
+.mobile-title {
+  display: none;
+  color: #ffcd00;
+  font-family: "Pattaya";
+  font-size: 60px;
+  text-align: center;
+  padding-top: 150px;
+  -webkit-text-stroke: 2px white;
+}
+.main-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: #f2f2f2;
+}
+.card {
+  width: 324px;
+  height: 280px;
+  margin: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.card-back {
+  border: 2px solid #70c02d;
+}
+.section-title {
+  background-color: #7d2ae8;
+  padding-top: 10px;
+}
+
+.card-img {
+  width: 100px;
+  height: 150px;
+}
+
+.card-content {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.spons-title {
+  font-family: "Henny Penny";
+  text-align: center;
+  font-size: 50px;
+  color: #ffcd00;
+  -webkit-text-stroke: 2px #70c02d;
+}
+.spons-para {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #ffcd00;
+}
+
+.card-rating {
+  text-align: center;
+  color: #7d2ae8;
+  margin-bottom: 15px;
+}
+.card .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.card .button button a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.card .button button {
+  background-color: #70c02d;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.button button:hover {
+  background: #296410;
+}
+
+/* Mobile View */
+@media (min-width: 320px) and (max-width: 480px) {
+  .mobile-title {
+    display: block;
+  }
+  #title {
+    display: none;
+  }
+  .inner-div {
+    margin-right: 5px;
+    width: 380px;
+  }
+  .carousel-inner {
+    display: none;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    opacity: 0;
+  }
+  main {
+    background-image: url("https://cdn.pixabay.com/photo/2020/06/08/15/22/carnival-5274790_1280.jpg");
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .card {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .first-footer {
+    display: none;
+  }
+}

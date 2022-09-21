@@ -1,0 +1,36 @@
+.title {
+  margin-top: 20px;
+  font-family: "Henny Penny";
+  text-align: center;
+  font-size: 60px;
+  color: #ffcd00;
+  -webkit-text-stroke: 2px #70c02d;
+}
+.title-text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+.accodion-body {
+  background-color: #70c02d;
+}
+#flush-collapseSix {
+  background-color: #70c02d;
+}
+#flush-collapseFive {
+  background-color: #ffcd00;
+}
+#flush-collapseFour {
+  background-color: #7d2ae8;
+  color: white;
+}
+#flush-collapseThree {
+  background-color: #70c02d;
+}
+#flush-collapseTwo {
+  background-color: #ffcd00;
+}
+#flush-collapseOne {
+  background-color: #7d2ae8;
+  color: white;
+}
